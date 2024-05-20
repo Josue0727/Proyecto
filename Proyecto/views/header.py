@@ -10,12 +10,13 @@ def header() -> rx.Component:
         ),
         rx.flex(
             rx.link(
+
                 rx.image(
                     src="Grupo.jpeg",
                     alt="Grupooo",
-                    width="16em",
-                    height="16em"
-                ),
+                    width="14em",
+                    height="14em"
+                        ),
                 href="/home",  
             ),
             rx.vstack(
@@ -24,10 +25,9 @@ def header() -> rx.Component:
                 ),
                 rx.text(
                     "uwu"
+                    
                 )
             )
         )
     )
-
-
 

@@ -7,3 +7,5 @@ def especies_page() -> rx.Component:
         width="100%",
         padding=Size.big.value
     )
+
+
