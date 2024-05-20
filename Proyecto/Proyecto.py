@@ -3,6 +3,8 @@ import Proyecto.styles.styles as styles
 from Proyecto.styles.styles import Size
 from Proyecto.views.navbar import navbar
 from Proyecto.views.header import header
+from Proyecto.componentes.clave_page import clave_page
+
 
 def index() -> rx.Component:
     return rx.box(
@@ -16,6 +18,7 @@ def index() -> rx.Component:
     )
 
 
+
 app = rx.App(
     stylesheets=styles.stylesheets,
     styles=styles.base_style
@@ -27,5 +30,18 @@ app.add_page(
     description="Interfaz inicial de EcoMaderas, aquí podrás encontrar una appa web interactiva que te permitirá identificar maderas"
 )
 
+app.add_page(
+    clave_page,
+    title="Clave",
+    description="Página de Clave"
+)
+
 app._compile()
+
+
+
+
+
+
+
 

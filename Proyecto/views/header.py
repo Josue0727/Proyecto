@@ -9,7 +9,7 @@ def header() -> rx.Component:
             padding_bottom=Size.default.value
         ),
         rx.flex(
-            rx.a(
+            rx.link(
                 rx.image(
                     src="Grupo.jpeg",
                     alt="Grupooo",
@@ -28,3 +28,6 @@ def header() -> rx.Component:
             )
         )
     )
+
+
+

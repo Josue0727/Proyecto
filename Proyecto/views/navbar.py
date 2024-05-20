@@ -6,17 +6,16 @@ def navbar() -> rx.Component:
     return rx.vstack(
         rx.hstack(
         rx.image(
-            src="Logo.png",
+            src="LogoO.png",
             alt="Logo de ExoMaderas",
             width=Size.so_big.value,
             height=Size.so_big.value
         ),
         rx.text("           @EcoMaderas 2024"),
         rx.spacer(),
-        rx.button(" Clave", bg=color.secondary.value, color=textcolor.secondary.value, padding=Size.big.value, font_size=Size.default.value),
+        rx.button(" Clave", bg=color.secondary.value, color=textcolor.secondary.value, padding=Size.big.value, font_size=Size.default.value, on_click=rx.redirect('/clave')),
         rx.button(" Especies", bg=color.secondary.value, color=textcolor.secondary.value, padding=Size.big.value, font_size=Size.default.value),
         rx.button(" Definiciones", bg=color.secondary.value, color=textcolor.secondary.value, padding=Size.big.value, font_size=Size.default.value),
-        spacing="1em",
         width="100%"
         ),
         bg=color.primary.value,
@@ -28,3 +27,5 @@ def navbar() -> rx.Component:
         top="0",
         width="100%"
     )
+
+
